@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "text": "About",
+      "url": "/about/",
+      "section": "about"
+    },
+    {
+      "text": "Services",
+      "url": "/services/",
+      "section": "services"
+    },
+    {
+      "text": "Examples",
+      "url": "/examples/",
+      "section": "examples"
+    },
+    {
+      "text": "Prices",
+      "url": "/prices/",
+      "section": "prices"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/",
+      "section": "contact"
+    }
+  ]
+}
