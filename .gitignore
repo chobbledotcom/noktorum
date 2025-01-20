@@ -3,6 +3,10 @@
 result
 result-*
 
+# ---> Eleventy
+# Built site
+_site
+
 # ---> Node
 # Logs
 logs
