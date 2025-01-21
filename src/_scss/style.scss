@@ -31,6 +31,11 @@ $footer-link: #ffffff;
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-size: 1rem;
   color: $text-color;
@@ -40,6 +45,7 @@ body {
   overflow-x: hidden;
   background-color: $body-bg;
   background: url("/assets/background.jpg");
+  background-position: top center;
   background-attachment: fixed;
   background-size: cover;
   padding: 0 10px;
@@ -155,6 +161,7 @@ header {
   position: sticky;
   background: #111;
   background-image: url("/assets/background.jpg");
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   top: 0;
