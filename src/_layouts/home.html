@@ -6,14 +6,12 @@ layout: base.html
 
 <section class="homepage-images">
   {% for image in collections.images %}
-    <a href="/images/{{ image }}">
-      <img
+    <a href="/images/{{ image }}"><img
         alt=""
         width="200"
         sizes="200"
         loading="lazy"
         src="/images/{{ image }}"
-      >
-    </a>
+      ></a>
   {% endfor %}
 </section>
