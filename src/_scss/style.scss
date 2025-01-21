@@ -47,6 +47,7 @@ body {
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
   padding: 0 10px;
   @media (min-width: 768px) {
     font-size: 1.2rem;
@@ -59,7 +60,7 @@ body {
   a {
     display: block;
     position: relative;
-    width: 150px;
+    width: 100%;
     box-shadow: 0px 0px 10px black;
     background-image: url("/assets/background.jpg");
     background-size: cover;
@@ -70,9 +71,9 @@ body {
       }
     }
 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
-    @media (min-width: 798px) {
+    @media (min-width: 660px) {
       width: 200px;
       margin-bottom: 20px;
     }
@@ -141,17 +142,17 @@ h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 310px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  @media (min-width: 640px) {
-    max-width: 640px;
+  @media (min-width: 660px) {
+    max-width: 660px;
   }
-  @media (min-width: 890px) {
+  @media (min-width: 940px) {
     max-width: 890px;
   }
-  @media (min-width: 1120px) {    max-width: 1120px;
+  @media (min-width: 1120px) {
+    max-width: 1120px;
   }
 }
 

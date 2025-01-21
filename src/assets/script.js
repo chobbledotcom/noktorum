@@ -8,7 +8,7 @@
 			gutter = 30;
 		} else if (width > 798) {
 			gutter = 20;
-		} else {
+		} else if (width <= 640) {
 			columnWidth = 150;
 		}
 		const elem = document.querySelector(".homepage-images");
