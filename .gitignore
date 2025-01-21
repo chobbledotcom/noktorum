@@ -7,6 +7,9 @@ result-*
 # Built site
 _site
 
+# ---> Direnv
+.direnv
+
 # ---> Node
 # Logs
 logs

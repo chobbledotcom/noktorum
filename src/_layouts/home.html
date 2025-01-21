@@ -2,43 +2,18 @@
 layout: base.html
 ---
 
-<div class="home">
-  <h1>{{ heading }}</h1>
-  <div class="top">
-    <a class="card" href="/services/">
-      <span>Services</span>
+{{ content }}
+
+<section class="homepage-images">
+  {% for image in collections.images %}
+    <a href="/images/{{ image }}">
       <img
-        src="/assets/network.svg"
-        width="150"
-        height="150"
-        alt="">
+        alt=""
+        width="200"
+        sizes="200"
+        loading="lazy"
+        src="/images/{{ image }}"
+      >
     </a>
-    <a class="card" href="/prices/">
-      <span>Prices</span>
-      <img
-        src="/assets/store.svg"
-        width="150"
-        height="150"
-        alt="">
-    </a>
-    <a class="card" href="/examples/">
-      <span>Examples</span>
-      <img
-        src="/assets/examples.svg"
-        width="150"
-        height="150"
-        alt="">
-    </a>
-    <a class="card" href="/contact/">
-      <span>Contact</span>
-      <img
-        src="/assets/contact.svg"
-        width="150"
-        height="150"
-        alt="">
-    </a>
-  </div>
-  <div class="content">
-    {{ content }}
-  </div>
-</div>
+  {% endfor %}
+</section>
