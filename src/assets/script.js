@@ -1,18 +1,23 @@
 (() => {
+	let masonryObject;
+
 	function masonry() {
+		masonryObject?.destroy();
+
 		const width = window.screen.width;
 		let gutter = 10;
 		let columnWidth = 200;
 
 		if (width > 1000) {
 			gutter = 30;
-		} else if (width > 798) {
+		} else if (width > 660) {
 			gutter = 20;
-		} else if (width <= 640) {
-			columnWidth = 150;
+		} else {
+			return;
 		}
+
 		const elem = document.querySelector(".homepage-images");
-		new Masonry(elem, {
+		masonryObject = new Masonry(elem, {
 			itemSelector: "a",
 			columnWidth: columnWidth,
 			gutter: gutter,

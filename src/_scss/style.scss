@@ -145,10 +145,10 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  @media (min-width: 660px) {
-    max-width: 660px;
+  @media (min-width: 640px) {
+    max-width: 640px;
   }
-  @media (min-width: 940px) {
+  @media (min-width: 890px) {
     max-width: 890px;
   }
   @media (min-width: 1120px) {
@@ -366,7 +366,7 @@ footer {
 }
 
 // Responsive design
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   header nav {
     .nav-toggle-label {
       display: block;
@@ -390,7 +390,7 @@ footer {
         text-align: right;
 
         a {
-          font-size: 1.2rem;
+          font-size: 2rem;
 
           &.active::after {
             bottom: -2px;
