@@ -333,6 +333,11 @@ header {
           padding-right: 1.5rem;
         }
       }
+      @media (min-width: 900px) {
+        li a {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }
