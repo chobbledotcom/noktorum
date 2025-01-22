@@ -6,6 +6,8 @@ description: Noktorum - tattooist in Berlin
 
 Tattoo artist in residency in Berlin
 
+[**Instagram:** @noktorum](https://www.instagram/noktorum)
+
 Upcoming dates:
 
 - **Feb 1-20:** Cholera Jasna, Poland

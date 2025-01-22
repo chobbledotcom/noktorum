@@ -289,10 +289,12 @@ header {
       li {
         margin: 0;
         a {
+          display: inline-block;
           font-size: 1.4rem;
           position: relative;
           font-family: $header-font;
           text-shadow: 1px 1px 0 black;
+          transition: 0.3s color ease-in;
         }
       }
       @media (min-width: 768px) {
@@ -327,9 +329,10 @@ main {
   z-index: 1;
 
   a {
-    color: $main-link;
+    color: $main-fg;
+    transition: color 0.3s ease-in;
     &:hover {
-      color: $main-fg;
+      color: $main-link;
     }
   }
   blockquote {
