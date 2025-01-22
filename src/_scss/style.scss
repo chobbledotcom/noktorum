@@ -45,14 +45,24 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   background-color: $body-bg;
-  background: url("/assets/background.jpg");
-  background-position: top center;
-  background-attachment: fixed;
-  background-size: cover;
   overflow-x: hidden;
   padding: 0 10px;
   @media (min-width: 768px) {
     font-size: 1.2rem;
+  }
+  &::before {
+    content: "";
+    display: block;
+    background: url("/assets/background.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -178,11 +188,22 @@ header {
   left: 0;
   right: 0;
   background: #111;
-  background-image: url("/assets/background.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
   z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url("/assets/background.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
 
   nav {
     display: flex;
