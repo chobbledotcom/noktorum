@@ -23,6 +23,9 @@ $footer-bg: #b35300;
 $footer-fg: #ffffff;
 $footer-link: #ffffff;
 
+$system-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+  serif;
+
 *,
 *::before,
 *::after {
@@ -40,8 +43,7 @@ body {
 body {
   font-size: 1rem;
   color: $text-color;
-  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
-    serif;
+  font-family: $system-font;
   line-height: 1.6;
   min-height: 100vh;
   background-color: $body-bg;
@@ -358,19 +360,6 @@ main {
   }
 }
 
-.contact-form {
-  border-radius: 8px;
-  border: none;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 616px;
-  height: 496px;
-
-  @media (min-width: 686px) {
-    height: 444px;
-  }
-}
-
 footer {
   color: $footer-fg;
   padding: 1rem;
@@ -399,6 +388,56 @@ footer {
       > div {
         width: 33%;
       }
+    }
+  }
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 2rem auto;
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  label {
+    color: $main-fg;
+    font-family: $header-font;
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.3rem 0.5rem;
+    font-family: $system-font;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    height: 6rem;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    color: $main-fg;
+    border-radius: 3px;
+    background: $body-bg;
+    border: 2px solid $main-fg;
+    font-family: $header-font;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $main-link;
+      color: $main-link;
     }
   }
 }
