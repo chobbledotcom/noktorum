@@ -1,8 +1,9 @@
 ---
-layout: home.html
-title: Noktorum - Tattoos by Spooks Rogers
-description: Noktorum - tattooist in Berlin
+layout: page.html
+title: Tattoos by Noktorum
 ---
+
+# Noktorum
 
 Tattoo artist in residency at [Nowhereland Tattoo Berlin](https://nowherelandtattoo.berlin/)
 
