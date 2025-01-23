@@ -11,7 +11,7 @@ layout: page.html
 
 *How old do I have to be to get a tattoo?* I will not tattoo anyone under the age of 18 years. 
 
-8Sprechen Sie Deutsche?* Ein Bissen, aber nicht sehr gut. Ich bin in Schule und mochte mehr lernen. Bitte haben sie geduld mit mir! 
+*Sprechen Sie Deutsche?* Ein Bissen, aber nicht sehr gut. Ich bin in Schule und mochte mehr lernen. Bitte haben sie geduld mit mir! 
 
 *Do you do cover-ups / tattoo over scars?* Yes. However this all depends on the detail of the cover-up and severity of the scarring. Feel free to get in contact and we can take a look. 
 
