@@ -183,6 +183,11 @@ header {
   background-position: top center;
   background-size: cover;
   z-index: 2;
+  font-size: 1.4rem;
+
+  @media (min-width: 900px) {
+    font-size: 2rem;
+  }
 
   nav {
     display: flex;
@@ -285,7 +290,6 @@ header {
         margin: 0;
         a {
           display: inline-block;
-          font-size: 1.4rem;
           position: relative;
           font-family: $header-font;
           text-shadow: 1px 1px 0 black;
@@ -305,11 +309,6 @@ header {
         }
         li:last-child a {
           padding-right: 1.5rem;
-        }
-      }
-      @media (min-width: 900px) {
-        li a {
-          font-size: 2rem;
         }
       }
     }
