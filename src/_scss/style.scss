@@ -411,6 +411,10 @@ footer {
     &::placeholder {
       color: #888;
     }
+    &:focus {
+      outline: 1px solid #c00;
+      outline-offset: 2px;
+    }
   }
 
   select {
