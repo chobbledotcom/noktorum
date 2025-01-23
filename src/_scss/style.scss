@@ -46,8 +46,7 @@ body {
   font-family: $system-font;
   line-height: 1.6;
   min-height: 100vh;
-  background-color: $body-bg;
-  background: url("/assets/background.jpg");
+  background: $body-bg url("/assets/background.jpg");
   background-position: top center;
   background-size: cover;
   overflow-x: hidden;
