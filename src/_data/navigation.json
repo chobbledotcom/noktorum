@@ -6,6 +6,11 @@
 			"section": "about"
 		},
 		{
+			"text": "Gallery",
+			"url": "/gallery/",
+			"section": "gallery"
+		},
+		{
 			"text": "FAQ",
 			"url": "/frequently-asked-questions/",
 			"section": "frequently-asked-questions"
