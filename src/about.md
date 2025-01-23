@@ -3,24 +3,14 @@ layout: page.html
 title: About
 ---
 
-# About Chobble
+# About
 
-Chobble is Stef and Alex from Prestwich, Manchester - web developers with over 30 years combined experience working on websites of all sizes - from small local charities and social groups to massive international storefronts.
+> Mumblecore exercitation distillery farm-to-table, shoreditch anim solarpunk aute ut cornhole live-edge pickled helvetica.
 
-We started Chobble to:
+Ipsum celiac elit, franzen gastropub tumblr four dollar toast neutral milk hotel knausgaard ut aliquip DIY subway tile. Listicle 8-bit gochujang selvage, JOMO consequat vape adipisicing kombucha blog fashion axe. Salvia adipisicing woke incididunt, lumbersexual laboris la croix taxidermy kickstarter solarpunk wolf intelligentsia.
 
-- Build websites and tools for local organisations and individuals
-- Provide honest advice and guidance
-- Contribute to the wider open source community
+Pug pinterest excepteur chartreuse. Vegan PBR&B coloring book four loko mumblecore live-edge wolf occupy in ugh vaporware.
 
-We charge a [flat per-hour rate](/prices/) and give full details of what's included.
+Nulla viral keffiyeh, stumptown shabby chic messenger bag anim. Ipsum sriracha master cleanse vibecession in kogi celiac literally selfies chia ut listicle occupy gorpcore YOLO.
 
-We prefer solutions which empower their users and so prioritise open source and flexibility over proprietary or locked-in solutions.
-
-We do not force you to host with us and provide instructions for hosting elsewhere or moving away - although you might like to host with us anyway.
-
-We are happy to explain as much about how your website works as you like, and will share all of its source code by default.
-
-We know many other tech-adjacent people (eg designers, copywriters, marketers) and are happy to connect you to them if you need their services.
-
-If this sounds good, please [contact us](/contact/) to discuss your project!
+**Migas banh mi microdosing ad. Chia semiotics ex id bodega boys activated charcoal deserunt esse.**

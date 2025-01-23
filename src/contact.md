@@ -3,6 +3,6 @@ layout: contact.html
 title: Contact Us
 ---
 
-# Get in Touch
+# Contact
 
-Drop us an email through the form below and we'll be in touch within 24 hours:
+Contact me through the form below and I'll be in touch within 24 hours:
