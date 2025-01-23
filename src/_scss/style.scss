@@ -203,9 +203,6 @@ header {
         &:hover {
           color: $brand-fg;
         }
-        @media (min-width: 798px) {
-          font-size: 5rem;
-        }
       }
       &:hover,
       &.active {
