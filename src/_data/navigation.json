@@ -6,9 +6,9 @@
 			"section": "about"
 		},
 		{
-			"text": "Prices",
-			"url": "/prices/",
-			"section": "prices"
+			"text": "FAQ",
+			"url": "/frequently-asked-questions/",
+			"section": "frequently-asked-questions"
 		},
 		{
 			"text": "Contact",
