@@ -1,7 +1,8 @@
 ---
-Title: Frequently Asked Questions
-Layout: page.html
+title: Frequently Asked Questions
+layout: page.html
 ---
+
 # Frequently Asked Questions
 
 blah blah
