@@ -5,20 +5,71 @@
 >
   <input type="hidden" name="_redirect" value="{{ site.url }}/thank-you/" />
   <label for="name">
-    Name
-    <input type="text" id="name" name="name" placeholder="Your name" required="" />
+    Your name
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"
+      required=""
+    >
+  </label>
+  <label for="age-range">
+    Your age:
+    <select
+      id="age-range"
+      name="age-range"
+      required=""
+    >
+      <option
+        value=""
+        selected
+        disabled
+      >Please select</option>
+      <option>Under 18</option>
+      <option>Over 18</option>
+    </select>
   </label>
   <label for="email">
     Email
-    <input type="email" id="email" name="email" placeholder="Your email address" />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required=""
+      placeholder="Your email address"
+    >
   </label>
-  <label for="phone">
-    Phone
-    <input type="text" id="phone" name="phone" placeholder="Your phone number" />
+  <label for="tattoo-placement">
+    Tattoo placement:
+    <input
+      type="text"
+      id="tattoo-placement"
+      name="tattoo-placement"
+      placeholder="eg Chest, thigh, back"
+    >
+  </label>
+  <label for="photo">
+    Photo References:
+    <input
+      type="hidden"
+      id="photos"
+      name="photos"
+      role="uploadcare-uploader"
+      data-public-key="163e2e1d19503f76417f"
+      data-images-only="true"
+      data-multiple="true"
+      data-tabs="file camera url facebook gdrive instagram"
+    />
   </label>
   <label for="message">
-    Message
-    <textarea id="message" name="message" placeholder="Your message" required=""></textarea>
+    Tattoo description:
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Your message"
+      required=""
+    ></textarea>
   </label>
   <button type="submit">Send Enquiry</button>
 </form>
