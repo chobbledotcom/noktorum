@@ -126,7 +126,7 @@ body {
   }
 
   .popover-container {
-    --close-size: 2.5rem;
+    --close-size: 2rem;
     position: fixed;
     width: fit-content;
     height: fit-content;
@@ -140,9 +140,9 @@ body {
     }
 
     .close-btn {
-      position: absolute;
-      top: calc(var(--close-size) * -0.5);
-      right: calc(var(--close-size) * -0.5);
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
       width: var(--close-size);
       height: var(--close-size);
       border-radius: 50%;
@@ -156,7 +156,9 @@ body {
       display: grid;
       place-items: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s;
+      transition:
+        transform 0.2s,
+        opacity 0.2s;
       z-index: 3;
       pointer-events: auto;
       opacity: 0.7;
@@ -167,8 +169,7 @@ body {
       }
 
       @media (max-width: 768px) {
-        top: 1rem;
-        right: 1rem;
+        --close-size: 2.5rem;
       }
     }
 
