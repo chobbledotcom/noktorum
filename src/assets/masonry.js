@@ -7,7 +7,7 @@
 	function init() {
 		container = document.querySelector(".homepage-images");
 		if (!container) return;
-		const imageLinks = Array.from(container.querySelectorAll("a"));
+		const imageLinks = Array.from(container.querySelectorAll("article"));
 		imageLinks.forEach((link) => link.remove());
 		images = imageLinks;
 	}

@@ -80,7 +80,16 @@ body {
   &.hidden {
     display: none;
   }
-  a {
+
+  &:has([popover]:popover-open) {
+    pointer-events: none;
+  }
+
+  [popover] {
+    pointer-events: auto;
+  }
+
+  button {
     display: block;
     position: relative;
     width: 100%;
@@ -88,6 +97,11 @@ body {
     background-image: url("/assets/background.jpg");
     background-size: cover;
     background-position: center center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    cursor: zoom-in;
 
     &:hover,
     &:active {
@@ -108,6 +122,65 @@ body {
         width: 100%;
         height: auto;
       }
+    }
+  }
+
+  .popover-container {
+    --close-size: 2.5rem;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    &::backdrop {
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: calc(var(--close-size) * -0.5);
+      right: calc(var(--close-size) * -0.5);
+      width: var(--close-size);
+      height: var(--close-size);
+      border-radius: 50%;
+      border: 0;
+      background: $body-bg;
+      color: $main-fg;
+      border: 2px solid $main-fg;
+      font-size: 2rem;
+      font-family: $header-font;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      z-index: 3;
+      pointer-events: auto;
+      opacity: 0.7;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+
+    .popover-img {
+      display: block;
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      position: relative;
+      pointer-events: auto;
+      box-shadow: 0 0 10px $body-bg;
     }
   }
 }
