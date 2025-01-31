@@ -11,5 +11,4 @@ Tattoo artist in residency at [Nowhereland Tattoo Berlin](https://nowherelandtat
 
 Upcoming dates:
 
-- **Feb 1-20:** Cholera Jasna, Poland
-- **April 4-19:** чорт лайно, Ukraine
+- TBD
