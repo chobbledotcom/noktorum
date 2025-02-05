@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$header-font: "old_londonregular", display;
+$header-font: "Geo", display;
 
 $text-color: #bbb;
 
@@ -34,29 +34,33 @@ $system-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   font-size: 1rem;
   color: $text-color;
   font-family: $system-font;
   line-height: 1.6;
   min-height: 100vh;
-  background: $body-bg url("/assets/background.jpg");
-  background-position: top center;
-  background-size: cover;
+  background: $body-bg;
   overflow-x: hidden;
   padding: 0 10px;
   @media (min-width: 768px) {
     font-size: 1.2rem;
   }
+  &.home {
+    height: auto;
+    min-height: auto;
+  }
 }
 
-.homepage-images {
+.homepage-image {
+  display: block;
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  margin: 0 auto 2rem;
+}
+
+.gallery-images {
   width: 100%;
   position: relative;
   display: flex;
@@ -94,9 +98,7 @@ body {
     position: relative;
     width: 100%;
     box-shadow: 0px 0px 10px black;
-    background-image: url("/assets/background.jpg");
-    background-size: cover;
-    background-position: center center;
+    background: $body-bg;
     border: 0;
     padding: 0;
     margin: 0;
@@ -244,6 +246,20 @@ h6 {
     max-width: 1120px;
   }
 }
+.home {
+  @media (min-width: 600px) {
+    header {
+      position: relative;
+      margin-top: 75px;
+    }
+    main {
+      margin: 1rem auto;
+    }
+    .container {
+      max-width: 500px;
+    }
+  }
+}
 
 header {
   padding: 10px 10px 20px;
@@ -251,47 +267,19 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #111;
-  background: url("/assets/background.jpg");
-  background-position: top center;
-  background-size: cover;
+  background: $body-bg;
   z-index: 2;
   font-size: 1.4rem;
 
   @media (min-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
-
-    a {
-      color: $header-fg;
-      text-decoration: none;
-
-      &.brand {
-        color: $brand-fg;
-        text-decoration: none;
-        font-family: $header-font;
-        text-shadow: 1px 1px 0 black;
-        margin-left: 3px;
-        &:hover {
-          color: $brand-fg;
-        }
-      }
-      &:hover,
-      &.active {
-        color: $header-fg-active;
-      }
-    }
-
-    .logo {
-      width: 228px;
-      image-rendering: pixelated;
-    }
 
     .nav-toggle {
       display: none;
@@ -354,19 +342,43 @@ header {
 
     .nav-links {
       display: flex;
-      gap: 2rem;
       list-style: none;
       margin: 0;
       padding: 0;
 
       li {
         margin: 0;
+        position: relative;
         a {
+          color: $header-fg;
           display: inline-block;
           position: relative;
           font-family: $header-font;
           text-shadow: 1px 1px 0 black;
           transition: 0.3s color ease-in;
+          text-decoration: none;
+          padding: 0 1rem;
+          &:hover,
+          &:active,
+          &.active {
+            color: $header-fg-active;
+            text-decoration: underline;
+          }
+        }
+        @media (min-width: 600px) {
+          & + li {
+            &::after {
+              content: "";
+              display: block;
+              background: white;
+              width: 2px;
+              position: absolute;
+              top: 50%;
+              left: -1px;
+              height: 50%;
+              transform: translate(0, -50%);
+            }
+          }
         }
       }
       @media (min-width: 768px) {
@@ -417,32 +429,15 @@ main {
 
 footer {
   color: $footer-fg;
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
+  font-family: $header-font;
   font-size: 1rem;
-  border-radius: 10px;
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
 
   a {
     color: $footer-link;
     &:hover {
       color: $footer-fg;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .container > div {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-
-      > div {
-        width: 33%;
-      }
     }
   }
 }
@@ -542,7 +537,7 @@ footer {
 }
 
 // Responsive design
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   header nav {
     .nav-toggle-label {
       display: block;

@@ -1,14 +1,5 @@
 ---
-layout: page.html
+layout: home.html
 title: Tattoos by Noktorum
+css_class: home
 ---
-
-# Noktorum
-
-Tattoo artist in residency at [Nowhereland Tattoo Berlin](https://nowherelandtattoo.berlin/)
-
-[**Instagram:** @noktorum](https://www.instagram/noktorum)
-
-Upcoming dates:
-
-- TBD

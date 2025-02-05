@@ -1,24 +1,24 @@
 {
-	"items": [
-		{
-			"text": "About",
-			"url": "/about/",
-			"section": "about"
-		},
-		{
-			"text": "Gallery",
-			"url": "/gallery/",
-			"section": "gallery"
-		},
-		{
-			"text": "FAQ",
-			"url": "/frequently-asked-questions/",
-			"section": "frequently-asked-questions"
-		},
-		{
-			"text": "Contact",
-			"url": "/contact/",
-			"section": "contact"
-		}
-	]
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About",
+      "url": "/about/"
+    },
+    {
+      "text": "Gallery",
+      "url": "/gallery/"
+    },
+    {
+      "text": "FAQ",
+      "url": "/frequently-asked-questions/"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/"
+    }
+  ]
 }
