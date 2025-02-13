@@ -3,10 +3,6 @@ layout: page.html
 title: About
 ---
 
-# About
-
-> Mumblecore exercitation distillery farm-to-table, shoreditch anim solarpunk aute ut cornhole live-edge pickled helvetica.
-
 Ipsum celiac elit, franzen gastropub tumblr four dollar toast neutral milk hotel knausgaard ut aliquip DIY subway tile. Listicle 8-bit gochujang selvage, JOMO consequat vape adipisicing kombucha blog fashion axe. Salvia adipisicing woke incididunt, lumbersexual laboris la croix taxidermy kickstarter solarpunk wolf intelligentsia.
 
 Pug pinterest excepteur chartreuse. Vegan PBR&B coloring book four loko mumblecore live-edge wolf occupy in ugh vaporware.
