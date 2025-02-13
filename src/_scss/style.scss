@@ -57,7 +57,7 @@ body {
 .homepage-image {
   display: block;
   max-width: 100%;
-  width: 500px;
+  width: 600px;
   height: auto;
   margin: 0 auto 2rem;
 }
@@ -277,16 +277,16 @@ h6 {
       margin-top: 75px;
     }
     main {
-      margin: 1rem auto;
+      margin: 0 auto;
     }
     .container {
-      max-width: 500px;
+      max-width: 600px;
     }
   }
 }
 
 header {
-  padding: 10px 10px 20px;
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -387,6 +387,8 @@ header {
           &:active,
           &.active {
             color: $header-fg-active;
+          }
+          &:hover {
             text-decoration: underline;
           }
         }
