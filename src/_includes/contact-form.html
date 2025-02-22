@@ -13,6 +13,16 @@
     name="_email.from"
     value="{{ site.name }} contact form"
   >
+  <input
+    type="hidden"
+    name="_email.template.footer"
+    value="false"
+  >
+  <input
+    type="hidden"
+    name="_email.subject"
+    value="New message from {{ site.name }} website contact form"
+  >
   <label for="name">
     Name:
     <input
