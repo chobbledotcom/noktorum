@@ -1,7 +1,5 @@
 @use "sass:color";
 
-$header-font: "Geo", display;
-
 $text-color: #bbb;
 
 $body-bg: #111;
@@ -23,8 +21,12 @@ $footer-bg: #b35300;
 $footer-fg: #ffffff;
 $footer-link: #ffffff;
 
-$system-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
-  serif;
+$system-font:
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", sans-serif;
+
+$header-font: "Geo", $system-font;
+$body-font: "Roboto Condensed", $system-font;
 
 *,
 *::before,
@@ -37,7 +39,7 @@ $system-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
 body {
   font-size: 1rem;
   color: $text-color;
-  font-family: $system-font;
+  font-family: $body-font;
   line-height: 1.6;
   min-height: 100vh;
   background: $body-bg;
@@ -55,7 +57,7 @@ body {
 .homepage-image {
   display: block;
   max-width: 100%;
-  width: 500px;
+  width: 600px;
   height: auto;
   margin: 0 auto 2rem;
 }
@@ -188,6 +190,31 @@ body {
   }
 }
 
+.faq {
+  position: relative;
+  .faq-background {
+    max-width: 40%;
+    height: auto;
+    shape-outside: url("/assets/faq.webp");
+    shape-margin: 10px;
+    float: right;
+  }
+  @media (min-width: 768px) {
+    .faq-background {
+      position: fixed;
+      top: 60px;
+      left: 60%;
+    }
+    .faq-content {
+      max-width: 60%;
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
+
 // Typography
 ul,
 ol {
@@ -201,14 +228,9 @@ ol {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   color: $main-heading;
-  font-family: $header-font;
-  margin: 1.5rem 0 1rem;
+  margin: 0 0 1rem;
   line-height: 1.2;
   font-weight: normal;
   text-shadow: 1px 1px 0 white;
@@ -216,9 +238,11 @@ h6 {
 
 h1 {
   font-size: 3rem;
+  font-family: $header-font;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 h3 {
   font-size: 1.75rem;
@@ -253,16 +277,16 @@ h6 {
       margin-top: 75px;
     }
     main {
-      margin: 1rem auto;
+      margin: 0 auto;
     }
     .container {
-      max-width: 500px;
+      max-width: 600px;
     }
   }
 }
 
 header {
-  padding: 10px 10px 20px;
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -357,11 +381,14 @@ header {
           text-shadow: 1px 1px 0 black;
           transition: 0.3s color ease-in;
           text-decoration: none;
+          text-transform: uppercase;
           padding: 0 1rem;
           &:hover,
           &:active,
           &.active {
             color: $header-fg-active;
+          }
+          &:hover {
             text-decoration: underline;
           }
         }

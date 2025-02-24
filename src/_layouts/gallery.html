@@ -12,10 +12,7 @@ layout: base.html
         alt=""
         loading="lazy"
         src="/images/{{ image }}"
-        sizes="
-            (max-width: 660px) 400px,
-            (min-width: 600px) 200px
-          "
+        eleventy:widths="200,400,800"
       />
     </button>
 
@@ -32,6 +29,7 @@ layout: base.html
         alt=""
         loading="lazy"
         class="popover-img"
+        eleventy:widths="400,800,1600"
       />
     </div>
   </article>

@@ -4,6 +4,8 @@
   let container;
   let images;
 
+  const COLUMN_WIDTH = 373;
+
   function init() {
     container = document.querySelector(".gallery-images");
     if (!container) return;
@@ -32,7 +34,7 @@
       addColumn(images);
     } else {
       // masonry layout for larger screens
-      const columnCount = Math.floor(containerWidth / 200);
+      const columnCount = Math.floor(containerWidth / COLUMN_WIDTH);
       const columns = Array.from({ length: columnCount }, () => []);
 
       images.forEach((image, index) => {
